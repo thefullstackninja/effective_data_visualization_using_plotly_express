@@ -7,7 +7,7 @@ df = pd.read_csv("../data/share-of-individuals-using-the-internet.csv")
 # extract data for 2016
 df_2016 = df[df['Year']==2016]
 
-print(df.shape)
+print(df_2016.shape)
 print(df.columns)
 
 plot = px.choropleth(data_frame=df_2016,
